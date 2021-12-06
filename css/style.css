@@ -2,12 +2,41 @@
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Press+Start+2P&display=swap");
 
+html {
+  overflow: hidden;
+}
+
+body {
+  font: 100% / 1.5;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+/* centre the content in the parallax layers */
+p {
+  font-family: "Monsterrat Alternates", sans-serif;
+  position: static;
+  font-size: 30px;
+  color: #baaff2;
+}
+/* centre the content in the parallax layers */
+li {
+  font-family: "Monsterrat Alternates", sans-serif;
+  position: static;
+  font-size: 30px;
+  color: #baaff2;
+}
+
 /* Parallax base styles
   --------------------------------------------- */
 
 .parallax {
   height: 500px; /* fallback for older browsers */
   height: 100vh;
+  font-size: 200%;
   overflow-x: hidden;
   overflow-y: auto;
   -webkit-perspective: 300px;
@@ -41,32 +70,15 @@
   transform: translateZ(-300px) scale(2);
   z-index: 3;
 }
-
-html {
-  overflow: hidden;
+.parallax__layer--fore {
+  -webkit-transform: translateZ(90px) scale(0.7);
+  transform: translateZ(90px) scale(0.7);
+  z-index: 1;
 }
-
-body {
-  font: 100% / 1.5;
-  font-family: "Montserrat Alternates", sans-serif;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-}
-/* centre the content in the parallax layers */
-p {
-  font-family: "Monsterrat Alternates", sans-serif;
-  text-align: center;
-  position: absolute;
-  left: 25%;
-  top: 75%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-.parallax {
-  font-size: 200%;
+.parallax__layer--deep {
+  -webkit-transform: translateZ(-600px) scale(3);
+  transform: translateZ(-600px) scale(3);
+  z-index: 2;
 }
 
 /* centre the content in the parallax layers */
@@ -74,11 +86,50 @@ p {
   font-family: "Press Start 2P", sans-serif;
   text-align: center;
   font-size: 70px;
-  position: absolute;
+  position: relative;
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+}
+/* centre the content in the parallax layers */
+.headers {
+  font-family: "Press Start 2P", sans-serif;
+  font-size: 30px;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-200%, -50%);
+}
+
+/* Left column */
+.leftcolumn {
+  border-width: 10px;
+  border-style: solid;
+  border-color: #baaff2;
+  float: left;
+  position: relative;
+  width: 75%;
+  padding: 40px;
+}
+
+/* Right column */
+.rightcolumn {
+  border-width: 10px;
+  border-style: solid;
+  border-color: #baaff2;
+  float: right;
+  position: relative;
+  width: 25%;
+  padding: 40px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 /* style the groups
@@ -94,7 +145,7 @@ p {
 #group2 {
   z-index: 3; /* slide under groups 1 and 3 */
 }
-#group2 .parallax__layer--back {
+#group3 .parallax__layer--back {
   background-color: #2a4454;
 }
 
@@ -103,16 +154,4 @@ p {
 }
 #group3 .parallax__layer--base {
   background-color: #f7f3ff;
-}
-
-/* misc
-  --------------------------------------------- */
-.demo__info {
-  position: absolute;
-  z-index: 100;
-  bottom: 1vh;
-  top: auto;
-  font-size: 80%;
-  text-align: center;
-  width: 100%;
 }

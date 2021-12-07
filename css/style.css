@@ -7,6 +7,7 @@ html {
 }
 
 body {
+  background-color: #2a4454;
   font: 100% / 1.5;
   font-family: "Montserrat Alternates", sans-serif;
 }
@@ -28,6 +29,10 @@ li {
   position: static;
   font-size: 30px;
   color: #baaff2;
+}
+h1 {
+  font-family: "Press Start 2P", sans-serif;
+  font-size: 40px;
 }
 
 /* Parallax base styles
@@ -62,7 +67,7 @@ li {
 .parallax__layer--base {
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
-  z-index: 4;
+  z-index: 2;
 }
 
 .parallax__layer--back {
@@ -78,7 +83,7 @@ li {
 .parallax__layer--deep {
   -webkit-transform: translateZ(-600px) scale(3);
   transform: translateZ(-600px) scale(3);
-  z-index: 2;
+  z-index: 4;
 }
 
 /* centre the content in the parallax layers */
@@ -93,47 +98,39 @@ li {
   transform: translate(-50%, -50%);
 }
 /* centre the content in the parallax layers */
-.headers {
-  font-family: "Press Start 2P", sans-serif;
-  font-size: 30px;
-  position: relative;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-200%, -50%);
-}
 
 /* Left column */
 .leftcolumn {
   border-width: 10px;
   border-style: solid;
-  border-color: #baaff2;
+  border-color: #f7f3ff;
   float: left;
-  position: relative;
-  width: 75%;
+  position: sticky;
+  width: 25%;
+  height: 50%;
   padding: 40px;
+  transform: translate(30%, 0%);
 }
 
 /* Right column */
 .rightcolumn {
   border-width: 10px;
   border-style: solid;
-  border-color: #baaff2;
+  border-color: #f7f3ff;
   float: right;
-  position: relative;
-  width: 25%;
+  position: sticky;
+  width: 30%;
+  height: 50%;
   padding: 40px;
+  transform: translate(-30%, 0%);
 }
 
 /* Clear floats after the columns */
 .row:after {
   content: "";
-  display: table;
+  display: flex;
   clear: both;
 }
-
-/* style the groups
-  --------------------------------------------- */
 
 #group1 {
   z-index: 5; /* slide over group 2 */
@@ -152,18 +149,18 @@ li {
 #group3 {
   z-index: 4; /* slide over group 2 and 4 */
 }
-#group3 .parallax__layer--back {
+#group3 .parallax__layer--fore {
   background-color: #2a4454;
 }
 #group4 {
   z-index: 4; /* slide over group 2 and 4 */
 }
-#group4 .parallax__layer--deep {
+#group4 .parallax__layer--base {
   background-color: #2a4454;
 }
 #group5 {
   z-index: 4; /* slide over group 2 and 4 */
 }
-#group5 .parallax__layer--base {
+#group5 .parallax__layer--fore {
   background-color: #f7f3ff;
 }

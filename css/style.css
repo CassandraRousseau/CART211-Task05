@@ -7,7 +7,7 @@ html {
 }
 
 body {
-  background-color: #2a4454;
+  background-image: url("../images/pattern.png");
   font: 100% / 1.5;
   font-family: "Montserrat Alternates", sans-serif;
 }
@@ -89,13 +89,9 @@ h1 {
 /* centre the content in the parallax layers */
 .title {
   font-family: "Press Start 2P", sans-serif;
-  text-align: center;
   font-size: 70px;
   position: relative;
-  left: 50%;
-  top: 50%;
   -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
 }
 /* centre the content in the parallax layers */
 
@@ -104,6 +100,7 @@ h1 {
   border-width: 10px;
   border-style: solid;
   border-color: #f7f3ff;
+  background-color: #2a4454;
   float: left;
   position: sticky;
   width: 25%;
@@ -117,6 +114,7 @@ h1 {
   border-width: 10px;
   border-style: solid;
   border-color: #f7f3ff;
+  background-color: #2a4454;
   float: right;
   position: sticky;
   width: 30%;
@@ -139,28 +137,39 @@ h1 {
   background-color: #4bf2f2;
 }
 
-#group2 {
-  z-index: 3; /* slide under groups 1 and 3 */
-}
-#group2 .parallax__layer--base {
-  background-color: #2a4454;
-}
-
-#group3 {
-  z-index: 4; /* slide over group 2 and 4 */
-}
-#group3 .parallax__layer--fore {
-  background-color: #2a4454;
-}
-#group4 {
-  z-index: 4; /* slide over group 2 and 4 */
-}
-#group4 .parallax__layer--base {
-  background-color: #2a4454;
-}
 #group5 {
   z-index: 4; /* slide over group 2 and 4 */
 }
 #group5 .parallax__layer--fore {
   background-color: #f7f3ff;
+}
+#conclusion {
+  font-family: "Monsterrat Alternates", sans-serif;
+  font-size: 30px;
+  color: #2a4454;
+  position: relative;
+  top: 30%;
+  left: 5%;
+  width: 85%;
+  height: 50%;
+}
+#conclusion2 {
+  font-family: "Monsterrat Alternates", sans-serif;
+  font-size: 30px;
+  color: #2a4454;
+  position: relative;
+  top: 0%;
+  left: 5%;
+  width: 85%;
+  height: 50%;
+}
+#conclusion3 {
+  font-family: "Monsterrat Alternates", sans-serif;
+  font-size: 30px;
+  color: #2a4454;
+  position: relative;
+  top: -37%;
+  left: 5%;
+  width: 85%;
+  height: 50%;
 }

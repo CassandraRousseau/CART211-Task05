@@ -34,7 +34,10 @@ h1 {
   font-family: "Press Start 2P", sans-serif;
   font-size: 40px;
 }
-
+a {
+  color: #ff44d4;
+  background-color: transparent;
+}
 /* Parallax base styles
   --------------------------------------------- */
 
@@ -70,20 +73,10 @@ h1 {
   z-index: 2;
 }
 
-.parallax__layer--back {
-  -webkit-transform: translateZ(-300px) scale(2);
-  transform: translateZ(-300px) scale(2);
-  z-index: 3;
-}
 .parallax__layer--fore {
-  -webkit-transform: translateZ(90px) scale(0.7);
+  -webkit-transform: translateZ(0);
   transform: translateZ(90px) scale(0.7);
   z-index: 1;
-}
-.parallax__layer--deep {
-  -webkit-transform: translateZ(-600px) scale(3);
-  transform: translateZ(-600px) scale(3);
-  z-index: 4;
 }
 
 /* centre the content in the parallax layers */
@@ -147,8 +140,8 @@ h1 {
   font-family: "Monsterrat Alternates", sans-serif;
   font-size: 30px;
   color: #2a4454;
-  position: relative;
-  top: 30%;
+  position: fixed;
+  top: 35%;
   left: 5%;
   width: 85%;
   height: 50%;
@@ -157,8 +150,8 @@ h1 {
   font-family: "Monsterrat Alternates", sans-serif;
   font-size: 30px;
   color: #2a4454;
-  position: relative;
-  top: 0%;
+  position: fixed;
+  top: 65%;
   left: 5%;
   width: 85%;
   height: 50%;
@@ -167,9 +160,19 @@ h1 {
   font-family: "Monsterrat Alternates", sans-serif;
   font-size: 30px;
   color: #2a4454;
-  position: relative;
-  top: -37%;
+  position: fixed;
+  top: 85%;
   left: 5%;
   width: 85%;
   height: 50%;
+}
+#footer {
+  color: #ff44d4;
+  background-color: #2a4454;
+  padding: 65px;
+  font-size: 30px;
+  text-align: center;
+  position: static;
+  width: 92.5%;
+  transform: translate(0%, -100%);
 }

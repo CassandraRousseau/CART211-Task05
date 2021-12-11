@@ -332,7 +332,78 @@ a {
   font-family: "Montserrat Alternates", sans-serif;
   color: #2a4454;
 }
+#myBtn {
+  background-image: url("../images/top8.jpg");
+  background-position: center;
+  background-size: 220px 190px;
+  border: none;
+  padding: 60px 40px;
+  font-family: "Press Start 2P", sans-serif;
+  color: #ff44d4;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 4px;
+  cursor: pointer;
+}
+#myBtn2 {
+  border: none;
+  background-image: url("../images/internetcelebrities.jpg");
+  background-position: top;
+  background-size: 310px 210px;
+  padding: 60px 10px;
+  font-family: "Press Start 2P", sans-serif;
+  color: #ff44d4;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 4px;
+  cursor: pointer;
+}
+#myBtn3 {
+  background-image: url("../images/customization.jpg");
+  background-position: center;
+  background-size: 220px 190px;
+  border: none;
+  padding: 60px 10px;
+  font-family: "Press Start 2P", sans-serif;
+  color: #ff44d4;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 4px;
+  cursor: pointer;
+}
 #myBtn4 {
+  background-image: url("../images/edited_samyworm.jpg");
+  background-position: center;
+  background-size: 220px 190px;
+  border: none;
+  padding: 60px 40px;
+  font-family: "Press Start 2P", sans-serif;
+  color: #2a4454;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 4px;
+  cursor: pointer;
 }
 #myBtn5 {
+  background-image: url("../images/edited_myspace_case.jpg");
+  background-position: center;
+  background-size: 220px 190px;
+  border: none;
+  padding: 60px 20px;
+  font-family: "Press Start 2P", sans-serif;
+  color: #2a4454;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 4px;
+  cursor: pointer;
 }
